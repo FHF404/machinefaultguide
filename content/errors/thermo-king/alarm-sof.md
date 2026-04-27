@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm SOF: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-sof"
-date: 2026-09-02T09:00:00Z
+date: 2026-08-30T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

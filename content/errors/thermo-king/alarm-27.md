@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm 27: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-27"
-date: 2026-05-08T09:00:00Z
+date: 2026-05-05T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

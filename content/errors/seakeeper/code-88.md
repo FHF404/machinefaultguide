@@ -1,7 +1,7 @@
 ﻿---
 title: "Seakeeper Marine Gyro Stabilizer Error Code 88: Causes & Fixes"
 slug: "seakeeper-marine-gyro-stabilizer-error-code-88"
-date: 2026-06-27T09:00:00Z
+date: 2026-06-24T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

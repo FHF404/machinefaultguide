@@ -1,7 +1,7 @@
 ﻿---
 title: "Cummins Onan RV Generator Error Code 4: Causes & Fixes"
 slug: "cummins-onan-rv-generator-error-code-4"
-date: 2026-06-06T09:00:00Z
+date: 2026-06-03T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

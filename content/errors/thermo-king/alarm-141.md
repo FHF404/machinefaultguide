@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm 141: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-141"
-date: 2026-07-18T09:00:00Z
+date: 2026-07-15T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

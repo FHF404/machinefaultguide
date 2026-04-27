@@ -1,7 +1,7 @@
 ﻿---
 title: "Seakeeper Marine Gyro Stabilizer Error Fault 555: Causes & Fixes"
 slug: "seakeeper-marine-gyro-stabilizer-error-fault-555"
-date: 2026-06-29T09:00:00Z
+date: 2026-06-26T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

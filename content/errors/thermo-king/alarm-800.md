@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm 800: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-800"
-date: 2026-08-21T09:00:00Z
+date: 2026-08-18T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

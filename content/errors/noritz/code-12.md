@@ -1,7 +1,7 @@
 ﻿---
 title: "Noritz Tankless Water Heater Error Code 12: Causes & Fixes"
 slug: "noritz-tankless-water-heater-error-code-12"
-date: 2026-09-05T09:00:00Z
+date: 2026-09-02T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

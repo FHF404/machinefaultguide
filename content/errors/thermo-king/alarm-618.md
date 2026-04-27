@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm 618: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-618"
-date: 2026-08-18T09:00:00Z
+date: 2026-08-15T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm 512: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-512"
-date: 2026-08-03T09:00:00Z
+date: 2026-07-31T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm dr1: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-dr1"
-date: 2026-09-04T09:00:00Z
+date: 2026-09-01T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

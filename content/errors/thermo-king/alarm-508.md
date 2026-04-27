@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm 508: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-508"
-date: 2026-08-01T09:00:00Z
+date: 2026-07-29T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

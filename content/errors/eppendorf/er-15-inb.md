@@ -1,7 +1,7 @@
 ﻿---
 title: "Eppendorf Centrifuge 5702 Error Er 15/Inb: Causes & Fixes"
 slug: "eppendorf-centrifuge-5702-error-er-15-inb"
-date: 2026-06-20T09:00:00Z
+date: 2026-06-17T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

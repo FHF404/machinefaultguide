@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm 177: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-177"
-date: 2026-07-26T09:00:00Z
+date: 2026-07-23T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

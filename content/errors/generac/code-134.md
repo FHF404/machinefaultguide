@@ -1,7 +1,7 @@
 ﻿---
 title: "Generac Air/Liquid-Cooled Home Standby Generator Error Code 134: Causes & Fixes"
 slug: "generac-air-liquid-cooled-home-standby-generator-error-code-134"
-date: 2026-09-11T09:00:00Z
+date: 2026-09-07T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

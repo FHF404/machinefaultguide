@@ -1,7 +1,7 @@
 ﻿---
 title: "Noritz Tankless Water Heater Error Code 91: Causes & Fixes"
 slug: "noritz-tankless-water-heater-error-code-91"
-date: 2026-09-09T09:00:00Z
+date: 2026-09-05T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"

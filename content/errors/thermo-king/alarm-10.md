@@ -1,7 +1,7 @@
 ﻿---
 title: "Thermo King Truck/Trailer Refrigeration Unit Error Alarm 10: Causes & Fixes"
 slug: "thermo-king-truck-trailer-refrigeration-unit-error-alarm-10"
-date: 2026-05-02T09:00:00Z
+date: 2026-04-29T09:00:00Z
 last_verified: 2026-05-01
 draft: false
 author: "Editorial Team"
