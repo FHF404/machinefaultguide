@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="{{ site.LanguageCode | default "en" }}">
+  <head>
+    {{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
+    {{ $description := site.Params.description }}
+    {{ if .Description }}
+      {{ $description = .Description }}
+    {{ else if .Params.summary }}
+      {{ $description = .Params.summary }}
+    {{ else if eq .Kind "taxonomy" }}
+      {{ $description = printf "Browse %s covered by %s, including long-tail troubleshooting pages and error code references." (.Title | lower) site.Title }}
+    {{ else if eq .Kind "term" }}
+      {{ $description = printf "Browse %s troubleshooting pages, error code meanings, common causes, and safe owner-level checks." .Title }}
+    {{ else if .Summary }}
+      {{ $description = .Summary | plainify | truncate 155 }}
+    {{ end }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ $title }}</title>
+    <meta name="description" content="{{ $description }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+    <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ site.Title }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+    {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+    {{ $ads := hugo.Data.adsense }}
+    {{ if and $ads.enabled $ads.client }}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ $ads.client }}" crossorigin="anonymous"></script>
+    {{ end }}
+    {{ partial "jsonld.html" . }}
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+      <nav aria-label="Main navigation">
+        <a href="{{ "/errors/" | relURL }}">Codes</a>
+        <a href="{{ "/search/" | relURL }}">Search</a>
+        <a href="{{ "/brands/" | relURL }}">Brands</a>
+        <a href="{{ "/categories/" | relURL }}">Categories</a>
+      </nav>
+    </header>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer class="site-footer">
+      <p>Independent troubleshooting reference. Always follow the official manual and safety instructions for your exact model.</p>
+    </footer>
+  </body>
+</html>

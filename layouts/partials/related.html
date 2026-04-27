@@ -1,0 +1,15 @@
+{{ $brand := .Params.brand }}
+{{ $related := where (where site.RegularPages "Section" "errors") "Params.brand" $brand }}
+{{ $related = where $related "Permalink" "ne" .Permalink }}
+{{ with first 6 $related }}
+<section class="related">
+  <div class="section-heading">
+    <h2>Related {{ $brand }} Codes</h2>
+  </div>
+  <div class="card-grid compact">
+    {{ range . }}
+      {{ partial "code-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

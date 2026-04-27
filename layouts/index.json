@@ -1,0 +1,14 @@
+{{- $pages := where .Site.RegularPages "Section" "errors" -}}
+[
+{{- range $index, $page := $pages -}}
+  {{- if $index }},{{ end }}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "url": {{ $page.RelPermalink | jsonify }},
+    "brand": {{ $page.Params.brand | jsonify }},
+    "product": {{ $page.Params.product | jsonify }},
+    "code": {{ $page.Params.code | jsonify }},
+    "summary": {{ $page.Params.summary | jsonify }}
+  }
+{{- end -}}
+]

@@ -1,0 +1,54 @@
+baseURL: https://machinefaultguide.com/
+languageCode: en-us
+defaultContentLanguage: en
+title: Machine Fault Guide
+timeZone: UTC
+enableRobotsTXT: true
+buildFuture: false
+
+pagination:
+  pagerSize: 24
+
+permalinks:
+  errors: "/:sections/:slug/"
+
+taxonomies:
+  brand: brands
+  category: categories
+  tag: tags
+
+params:
+  description: "Plain-English fault code and alarm code troubleshooting for commercial, industrial, marine, lab, and field equipment."
+  author: "Machine Fault Guide"
+  adsense:
+    enabled: false
+    client: "ca-pub-0000000000000000"
+    slot: "0000000000"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+    ordered: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - ADS
+
+mediaTypes:
+  text/plain:
+    suffixes:
+      - txt
+
+outputFormats:
+  ADS:
+    mediaType: text/plain
+    baseName: ads
+    isPlainText: true
+    notAlternative: true

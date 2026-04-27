@@ -1,0 +1,33 @@
+{{ if and (eq .Section "errors") .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": {{ printf "%q" .Title | safeJS }},
+  "description": {{ with .Params.summary }}{{ printf "%q" . | safeJS }}{{ else }}{{ printf "%q" (.Summary | plainify) | safeJS }}{{ end }},
+  "datePublished": {{ printf "%q" (.Date.Format "2006-01-02T15:04:05Z07:00") | safeJS }},
+  "dateModified": {{ with .Params.last_verified }}{{ printf "%q" . | safeJS }}{{ else }}{{ printf "%q" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") | safeJS }}{{ end }},
+  "author": {
+    "@type": "Organization",
+    "name": {{ with .Params.author }}{{ printf "%q" . | safeJS }}{{ else }}{{ printf "%q" site.Params.author | safeJS }}{{ end }}
+  },
+  "mainEntity": [
+    {{- with .Params.faq -}}
+      {{- range $index, $item := . -}}
+        {{- if $index }},{{ end -}}
+        {{- $question := or $item.q $item.question -}}
+        {{- $answer := or $item.a $item.answer -}}
+        {
+          "@type": "Question",
+          "name": {{ printf "%q" $question | safeJS }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ printf "%q" $answer | safeJS }}
+          }
+        }
+      {{- end -}}
+    {{- end -}}
+  ]
+}
+</script>
+{{ end }}

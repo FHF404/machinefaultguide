@@ -1,0 +1,8 @@
+<article class="code-card">
+  <a href="{{ .RelPermalink }}">
+    <span class="code">{{ with .Params.code }}{{ . }}{{ else }}{{ .Title }}{{ end }}</span>
+    <h2>{{ .Title }}</h2>
+    <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 120 }}{{ end }}</p>
+    <span class="meta">{{ with .Params.brand }}{{ . }}{{ end }}{{ with .Params.product }} / {{ . }}{{ end }}</span>
+  </a>
+</article>

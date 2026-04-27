@@ -1,0 +1,13 @@
+{{ $ads := hugo.Data.adsense }}
+{{ if and $ads.enabled $ads.client $ads.article_slot }}
+<aside class="ad-slot" aria-label="Advertisement">
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="{{ $ads.client }}"
+    data-ad-slot="{{ $ads.article_slot }}"
+    data-ad-format="auto"
+    data-full-width-responsive="true"{{ if $ads.test_mode }}
+    data-adtest="on"{{ end }}></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</aside>
+{{ end }}

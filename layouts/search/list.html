@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="content-band search-page">
+  {{ partial "breadcrumbs.html" . }}
+  <div class="section-heading search-heading">
+    <div>
+      <h1>{{ .Title }}</h1>
+      <p>Search published fault-code notes by brand, product, code, or meaning.</p>
+    </div>
+  </div>
+
+  <form class="search-panel" role="search">
+    <label for="site-search">Search error codes</label>
+    <input id="site-search" name="q" type="search" placeholder="Try Generac 1900, Noritz 11, RPM sensor..." autocomplete="off" autofocus>
+    <p id="search-status" class="search-status">Loading search index...</p>
+  </form>
+
+  <div id="search-results" class="search-results" aria-live="polite"></div>
+</section>
+<script src="{{ "js/search.js" | relURL }}" defer></script>
+{{ end }}

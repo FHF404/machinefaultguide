@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="hero">
+  <div>
+    <p class="eyebrow">Troubleshooting reference</p>
+    <h1>Find what an error code means and what to check next.</h1>
+    <p class="lede">{{ site.Params.description }}</p>
+  </div>
+</section>
+
+<section class="content-band">
+  <div class="section-heading">
+    <h2>Latest Error Codes</h2>
+    <a href="{{ "/errors/" | relURL }}">View all</a>
+  </div>
+  <div class="card-grid">
+    {{ range first 12 (where site.RegularPages "Section" "errors").ByDate.Reverse }}
+      {{ partial "code-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

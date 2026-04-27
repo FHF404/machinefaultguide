@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="article">
+  {{ partial "breadcrumbs.html" . }}
+  <header class="article-header">
+    <p class="eyebrow">{{ with .Params.brand }}{{ . }}{{ end }}{{ with .Params.product }} {{ . }}{{ end }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="lede">{{ . }}</p>{{ end }}
+    <dl class="facts">
+      {{ with .Params.code }}<div><dt>Code</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{ with .Params.brand }}<div><dt>Brand</dt><dd><a href="{{ "/brands/" | relURL }}{{ . | urlize }}/">{{ . }}</a></dd></div>{{ end }}
+      {{ with .Params.product }}<div><dt>Product</dt><dd>{{ . }}</dd></div>{{ end }}
+      <div><dt>Updated</dt><dd>{{ .Date.Format "2006-01-02" }}</dd></div>
+    </dl>
+  </header>
+
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+
+  {{ partial "related.html" . }}
+</article>
+{{ end }}

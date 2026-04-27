@@ -1,0 +1,3 @@
+{{- with hugo.Data.adsense.ads_txt -}}
+{{ . }}
+{{- end -}}
