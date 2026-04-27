@@ -49,7 +49,7 @@ Use this as a legitimate publishing queue. Avoid cloaking, scraped text, or misl
 
 1. Push this folder to a GitHub repository.
 2. Import the repository in Vercel.
-3. Set the build command to `hugo --gc --minify` and output directory to `public` if Vercel does not read `vercel.json`.
+3. Vercel reads `vercel.json`. The build command downloads Hugo and then builds into `public`.
 4. Create a Vercel Deploy Hook and call it from cron-job.org once per day.
 
 ## AdSense
